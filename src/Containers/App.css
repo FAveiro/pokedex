@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* --------------------- */
+/* Container             */
+/* --------------------- */
+
+.container {
+  height: 100vh;
+  background-image: url("../Assets/background.png");
+  background-size: cover;
+  background-repeat: round;
+  overflow: auto;
+}
+
+.container_information {
+  display: flex;
+}
+
+.container_card {
+  display: grid;
+  height: auto;
+  width: 50%;
+  grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  padding-left: 50px;
+}
+
+.container_detail {
+  height: 60%;
+  width: 45%;
+  top: 55%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  position: absolute;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: #ffcb05;
+  -webkit-text-stroke: 3px #2a75bb;
+  font-size: 50px;
+  font-family: "Pokemon";
+  letter-spacing: 3px;
+  padding-top: 20px;
+}
+
+/* --------------------- */
+/* Components - Loader   */
+/* --------------------- */
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* --------------------- */
+/* Components - Cards    */
+/* --------------------- */
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: rgba(0, 0, 0, 0.6);
+  border-radius: 25px 25px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.cards_info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cards_name {
+  color: black;
+  -webkit-text-stroke: 0.5px rgb(25, 25, 25);
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  font-weight: 400;
+}
+
+.cards_type {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  font-weight: 400;
+}
+
+.cards_type_label {
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: rgba(0, 0, 0, 0.6);
+  border-radius: 25px 25px;
+  padding: 3px;
+  background-color: rgba(245, 245, 245, 0.3);
+}
+
+.cards_image {
+  width: 9em;
+  height: 7em;
+}
+
+/* --------------------- */
+/* Components - Detail   */
+/* --------------------- */
+
+.container_detinfo {
+  height: 90%;
+  width: 70%;
+  padding: 0 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  border-radius: 25px 25px;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.detinfo_search {
+  display: flex;
+  gap: 5px;
+  padding-top: 10px;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  height: fit-content;
+}
+
+.detinfo_from {
+  display: flex;
+  gap: 10px;
+}
+
+/* --------------------- */
+/* Components - Evolution*/
+/* --------------------- */
+
+.evochain_display {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  height: fit-content;
+}
+
+.evochain {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px 0px;
+}
+
+.evochain_wrap {
+  display: flex;
+  flex-direction: row;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: rgba(0, 0, 0, 0.6);
+  border-radius: 25px 25px;
+  align-items: center;
+  justify-content: center;
+  width: 12em;
+}
+
+/* Comuns */
+
+h2 {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  height: fit-content;
+  width: fit-content;
+}
+
+input {
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: rgba(0, 0, 0, 0.6);
+  border-radius: 25px 25px;
+  padding: 5px 10px;
+  height: fit-content;
+  width: fit-content;
+}
+
+button {
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: rgba(0, 0, 0, 0.6);
+  border-radius: 25px 25px;
+  padding: 5px 10px;
+  height: fit-content;
+}
+
+button:active {
+  transform: translateY(4px);
+}
+
+.error {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  height: fit-content;
+  width: fit-content;
+  color: red;
+}
+
